@@ -17,6 +17,7 @@ app.on('ready', function() {
   mainWindow.loadUrl('file://' + __dirname + '/../index.html');
 
   mainWindow.on('closed', function() {
+    console.log('a');
     mainWindow = null;
   });
 });
